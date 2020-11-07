@@ -4,6 +4,7 @@ import { withGoogleMap, GoogleMap } from 'react-google-maps';
 import Marker from './Marker';
 import Polyline from './Polyline';
 import Callout from './Callout';
+import Direction from './Direction';
 
 const GoogleMapContainer = withGoogleMap(props => (
   <GoogleMap {...props} ref={props.handleMapMounted} />
@@ -102,6 +103,7 @@ class MapView extends Component {
 MapView.Marker = Marker;
 MapView.Polyline = Polyline;
 MapView.Callout = Callout;
+MapView.Direction = Direction;
 
 const styles = StyleSheet.create({
   container: {
